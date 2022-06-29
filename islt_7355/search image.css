@@ -1,0 +1,7 @@
+.search {
+    display: inline;
+    height: 30px;
+    width:30px;
+    list-style-type: none;
+    text-align: right;
+}
