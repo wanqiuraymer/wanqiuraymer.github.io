@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexboxes</title>
+    <style>
+    /*enter your embedded CSS here for practicing with Flexbox*/
+        #content{
+            display: flex;
+            flex-direction: row;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            background: beige;
+            width: 150px;
+            margin: 0 15px 15px 0;
+            padding: 5px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <header><h1>Test Page</h1></header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Practice</li>
+                <li>Quiz</li>
+                <li>Test</li>
+            </ul>
+        </nav>
+        <main>This page uses a flexbox to create the navigation bar.</main>
+        </div>
+    
+    <footer><h3>Here is the footer.</h3></footer>
+    
+</body>
+</html>
