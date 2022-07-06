@@ -1,4 +1,4 @@
-nav{
+nav {
     background-color: #a3cfed;
     height: 60px;
     color:#474646;
@@ -41,3 +41,4 @@ nav ul li ul li {
 nav>ul>li:hover>ul{
     display: block;
 }
+
