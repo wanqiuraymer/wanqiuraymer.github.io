@@ -44,7 +44,7 @@ p {
 #mainLearn {
     display:grid;
     grid-template-rows: 10% 1fr 150px; 
-    grid-template-columns: repeat(4 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
     
 }
@@ -98,7 +98,7 @@ footer {
     p {font-size: medium;}
 }
 @media screen and (max-width:515px) {
-    #img1 {width: 400x;}
+    #img1 {width: 400px;}
     #img1 {height: 200px;}
     #mainAbout {
         display: grid;
