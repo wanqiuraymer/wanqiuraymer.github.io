@@ -4,7 +4,8 @@ nav {
     padding-top: 15px;
     padding-bottom: 15px;
     width:100%;
-    line-height: 25px;
+    line-height: 35px;
+    height: 60px;
 }
 nav ul {
     display: flex;
@@ -29,7 +30,7 @@ nav ul li a {
 label {
     margin: 0 10px 0 0;
     font-size: 26px;
-    line-height: 25px;
+    line-height: 35px;
     display: none;
     width: 30px;
     float: right;
@@ -44,48 +45,55 @@ nav a:hover {
 }
 nav ul>li ul {
     position:absolute;
-    margin-top:30px;
-    margin-left:0;
+    margin-top:0px;
+    margin-left:0px;
     display: none;
+    width: 80px;
 }
-
+#dropmenu li {
+    border: 5px solid #a3cfed;
+    width: 150px;
+    background-color: #a3cfed;
+}
 nav>ul>li:hover>ul {
     display: block;
 }
-
 @media screen and (max-width: 846px) {
     label {
         display: block;
         cursor: pointer;
         }
-    nav ul {
+    #hamnav {height: 40px}
+    #mobilenav {
         width: 100%;
         margin-top: 30px;
-        display:block;
-        
+        display:none;       
     }
+    #mobilenav li {
+        margin-left: -40px;
+        width:95%;
+    }
+       
     nav ul li a {
         display: block;
         width: 100%;
         padding-left: 0;
+        padding-top: 20px;
         padding-right: 30px;
         background-color: #a3cfed;
         font: bold;
         font-size: medium;
         text-align: center;
-
     }
-    nav ul ul {
-        z-index: 1;   
-    }
+    /*nav ul ul {
+        z-index: 1;  
+    }*/
     nav ul li ul li {
         margin-top:0;
         margin-bottom:0;
         text-align: center;
+        display:none;
     }
-    #toggle:checked + nav ul {
-        visibility: visible;
-    }    
+    #hamnav input:checked ~ #mobilenav {display: block;}
 
-   
-}
+} 
