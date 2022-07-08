@@ -1,9 +1,10 @@
 nav {
     background-color: #a3cfed;
-    height: 60px;
     color:#474646;
-    padding: 30px;
-    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width:100%;
+    line-height: 25px;
 }
 nav ul {
     display: flex;
@@ -11,6 +12,7 @@ nav ul {
     padding-right: 0;
 }
 nav ul li {
+    display:block;
     list-style-type: none;
     position:relative;
 }
@@ -19,26 +21,71 @@ nav ul li a {
     padding-right: 20px;
     padding-left:30px;
     margin-right:10px;
-    border: 5px solid whitesmoke;
-    border-radius: 20px;
-    background-color: whitesmoke;
+    font:bold;
+    background-color: #a3cfed;
+    border: 5px solid #a3cfed;
     font-size: larger;
 }
+label {
+    margin: 0 10px 0 0;
+    font-size: 26px;
+    line-height: 25px;
+    display: none;
+    width: 30px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
 nav a:hover {
-    background-color: lightgray;
-    border: 5px solid lightgray;
+    /*background-color: lightgray;
+    border: 5px solid lightgray;*/
+    color: gray;
 }
 nav ul>li ul {
     position:absolute;
-    margin-top:0px;
+    margin-top:30px;
     margin-left:0;
     display: none;
 }
-nav ul li ul li {
-    margin-top:10px;
-    margin-bottom:10px;
-}
-nav>ul>li:hover>ul{
+
+nav>ul>li:hover>ul {
     display: block;
 }
 
+@media screen and (max-width: 846px) {
+    label {
+        display: block;
+        cursor: pointer;
+        }
+    nav ul {
+        width: 100%;
+        margin-top: 30px;
+        display:block;
+        
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 30px;
+        background-color: #a3cfed;
+        font: bold;
+        font-size: medium;
+        text-align: center;
+
+    }
+    nav ul ul {
+        z-index: 1;   
+    }
+    nav ul li ul li {
+        margin-top:0;
+        margin-bottom:0;
+        text-align: center;
+    }
+    #toggle:checked + nav ul {
+        visibility: visible;
+    }    
+
+   
+}

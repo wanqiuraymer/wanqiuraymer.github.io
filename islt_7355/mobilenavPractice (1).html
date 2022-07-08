@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Navigation</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            /*set the active page class to any <li> that has the class*/
+        .active a:link {
+            background-color: beige;
+        }
+        #hamburger {
+            display: none;
+        }
+
+        /*format and position the main navigation menu*/
+        nav {
+            top: 0px;   
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav>ul li {
+            position: relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
+            text-align: center;
+            font-weight: bold;
+            color: darkmagenta;
+            float: left;
+        }
+        nav a {
+            text-decoration: none;
+            display: inline-block;
+            border: 3px dotted magenta;
+            padding: 15px 15px 15px 15px;
+            width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
+            margin: 2px;
+        }
+
+        /*format all navigation <a> elements*/
+        nav a:link{
+            background-color: white;
+        }
+        nav a:hover, nav a:focus {
+            background-color: cornsilk;
+        }
+        nav a:active{
+            background-color: aquamarine;
+        }
+
+        /*position sub-menu or drop-down*/
+        nav ul>li ul {
+            position: absolute;
+            top: 100%;
+            display: none;
+            
+        }
+        nav ul ul li {
+            float:none;
+            background-color: azure;
+        }
+
+        /*special hover to display the drop-down*/
+        nav>ul>li:hover>ul{
+            display: block;
+        
+        }
+
+        /*media queries go here after the main CSS*/
+        @media screen and (max-width: 640px) {
+            #hamburger {
+                display: inline-block;    
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                visibility: hidden;
+            }
+            nav ul ul {
+                z-index: 1;
+            }
+            nav:hover ul {
+                visibility: visible ;
+            
+            }
+        
+
+            }
+           
+
+    
+    /*@media only screen and (max-width: 640px) {
+header {
+position: relative;
+        height: 40px;
+        display: block;
+        background-color: cadetblue;
+        width: 100%;        
+}
+#hamburger {
+display: inline-block;
+        padding-left: 20px;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+}
+nav ul, nav:active ul {
+display: none;
+position: absolute;
+padding: 20px 20px 20px 0px;
+top: 20px;
+}
+nav:hover ul {
+display: block;
+}
+     nav:hover #mobileHide {
+display: block;
+}
+nav li {
+text-align: center;
+padding: 0;
+margin: 0;
+}
+    nav>ul li {
+    text-align: left;
+    font-weight: bold;
+    color: darkmagenta;
+    float: left;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    border-top: none;
+    border-bottom: none;
+    padding: 15px 0px 15px 35px;
+    width: 240px;
+    margin-bottom: 2px;
+}
+nav .lastMobile {border-bottom: 3px dotted magenta;}
+    nav ul li ul {
+        display:none;
+    }
+}*/
+
+        
+            
+            
+        
+        </style>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <label id="hamburger">&#9776;</label>
+        <ul>
+            <li class="active"><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a>
+                    <ul id="mobileHide">
+                        <li><a href="#">Menu 2a</a></li>
+                        <li><a href="#">Menu 2b</a></li>
+                        <li><a href="#">Menu 2c</a></li>
+                    </ul>
+            </li>
+            <li><a href="#">Menu 3</a></li>
+            <li class="lastMobile"><a href="#">Menu 4</a></li>
+        </ul>
+        </nav>
+            </header>
+    
+    </body>
+    </html>

@@ -5,7 +5,8 @@
         This page is to show Let's learn Page. Updated on 6/30/22
     -->
     <meta charset="utf-8">
-    <title>Template</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Let's Learn!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 </head>
@@ -14,14 +15,17 @@
         <h1 id="h1">Little Mouse Chinese</h1>
     </header>
     <nav>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
         <ul>
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="about.html">About</a> </li>
-            <li> <a href="#">Let's Learn!</a>
+            <li> <a href="Learn.html">Let's Learn!</a>
                 <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Goal 1</a></li>
+                    <li><a href="#">Goal 2</a></li>
+                    <li><a href="#">Goal 3</a></li>
+                    <li><a href="#">Goal 4</a></li>
                 </ul> 
             </li>
             <li> <a href="reflection.html">Resource & Reference</a> </li>
@@ -29,9 +33,35 @@
         </ul>
 
     </nav>
-    <main>
+    <main id="mainLearn">
+        <div id="di1">
+            <img class="imgL" src="family1.jpg" alt="f1" width="200" height="250">
+            <p class="pr">
+                <a href="#">Goal 1 <br/> Who do you have in your family?</a>
+            </p>
+        </div>
+        <div id="di2">
+            <img  class="imgL" src="family3.jpg" alt="f1" width="200" height="250">
+            <p class="pr">
+                <a href="#">Goal 2  <br/> How many siblings?</a>
+            </p>
+        </div>
+        <div id="di3">
+            <img  class="imgL" src="family2.jpg" alt="f1" width="200" height="250">
+            <p class="pr">
+                <a href="#">Goal 3  <br/> What is the difference?</a>
+            </p>
+        </div>
+        <div id="di4">
+            <img  class="imgL" src="family4.jpg" alt="f1" width="200" height="250">
+            <p class="pr">
+                <a href="#">Goal 4  <br/> Let's practice!</a>
+            </p>
+        </div>
+        
+
     </main>
-   
+   <br/>
     <footer>
         <p>Wanqiu Raymer wr9px@missouri.edu Copyright 2022 Little Mouse Chinese</p>
     </footer>
