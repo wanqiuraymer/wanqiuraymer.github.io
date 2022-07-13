@@ -7,6 +7,7 @@ nav {
     line-height: 35px;
     height: 60px;
 }
+
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -63,7 +64,9 @@ nav>ul>li:hover>ul {
         display: block;
         cursor: pointer;
         }
-    #hamnav {height: 40px}
+    #hamnav {height: 40px;
+        
+    }
     #mobilenav {
         width: 100%;
         margin-top: 30px;

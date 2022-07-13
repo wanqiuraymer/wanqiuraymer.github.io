@@ -1,16 +1,52 @@
-
-#h1 {color: #7445D8;
-text-align: center;}
+@font-face {
+    font-family: Bobby Jones;
+    src: url(BobbyJonesSoft.otf);
+}
+@font-face {
+    font-family: Mali;
+    src: url(Mali.ttf);
+}
+@font-face {
+    font-family: Halimun;
+    src: url(Halimun.ttf);
+}
+#h1 {color: #6868ac;
+    font-family: Bobby Jones, serif;
+    font-size: 65px;
+    text-align: center;
+}
 
 .h2 {color: #474646;
+    font-family: Mali, serif;
+    font-size: 27px;
+}
+.h2name {color: #474646;
+    font-family: Mali, serif;
+    font-size: 27px;
+    margin-top: 0;;
 }
 
 #h3 {color: #474646;
 }
+#h1name {font-family: Mali, serif;
+    display:none;
+}
 p {
     font-size: larger;
 }
+blockquote {
+    font-family: halimun, serif;
+    font-size: 20px;
+}
 .pr {font-size: large;}
+
+.ulEdu li {
+    list-style-type:square;
+    text-align: left;
+    padding-top: 5px;
+    /*margin-left:-40px;*/
+    
+}
 #reflection1 {
     padding-left: 36px;
     text-indent: -36px;}
@@ -20,7 +56,7 @@ p {
 
 #mainAbout {
     display: grid;
-    grid-template-rows: 70px 230px 70px 70px 300px;
+    grid-template-rows: 70px 300px 70px 180px 300px;
     grid-template-columns: 200px 100px 1fr;
     grid-gap: 10px;
     width: 100%;
@@ -31,6 +67,7 @@ p {
 #d4 {grid-row: 3 / 4; grid-column: 1 / 4;}
 #d5 {grid-row: 4 / 5; grid-column: 1 / 4;}
 #d6 {grid-row: 5 / 6; grid-column: 1 / 4;}
+#d4 {display: none;}
 
 #mainReflection {
     display:grid;
@@ -54,8 +91,13 @@ p {
 #di4 {grid-row: 2 / 3; grid-column: 4 / 5;}
 
 footer {
+    padding-top: 5px;
+    min-height: 80px;
     text-align: center;
+    background-image: url(image/footerimage.png);
+    background-size: cover;
 }
+.imgfooter {margin-bottom: -10px;}
 @media screen and (max-width:846px) {
     header h1 {font-size: large;}
     main h2 {font-size: medium;}
@@ -84,7 +126,14 @@ footer {
     #di1 {grid-row: 2 / 3; grid-column: 2 / 3;} 
     #di2 {grid-row: 2 / 3; grid-column: 3 / 4;}
     #di3 {grid-row: 3 / 4; grid-column: 2 / 3;}
-    #di4 {grid-row: 3 / 4; grid-column: 3 / 4;}      
+    #di4 {grid-row: 3 / 4; grid-column: 3 / 4;}     
+    #mainAbout {
+        display: grid;
+        grid-template-rows: 70px 400px 70px 180px 300px;
+        grid-template-columns: 200px 100px 1fr;
+        grid-gap: 10px;
+        width: 100%;
+    } 
 }
     
 @media screen and (max-width:654px) {
@@ -98,11 +147,12 @@ footer {
     p {font-size: medium;}
 }
 @media screen and (max-width:515px) {
+    .h2 {font-size: 18px;}
     #img1 {width: 400px;}
     #img1 {height: 200px;}
     #mainAbout {
         display: grid;
-        grid-template-rows: 35px 230px 200px 20px 35px 100px;
+        grid-template-rows: 60px 240px 320px 20px 100px 100px;
         grid-template-columns: 1fr;
         grid-gap: 10px;
         margin-left: 10px;
@@ -114,6 +164,8 @@ footer {
     #d4 {grid-row: 4 / 5; grid-column: 1;}
     #d5 {grid-row: 5 / 6; grid-column: 1;}
     #d6 {grid-row: 6 / 7; grid-column: 1;}
+    blockquote {font-size: 15px;}
+    .h2name {margin-top: 10px;}
 
     .imgL {width: 100px;
     height: 150px;}
@@ -127,4 +179,33 @@ footer {
     #di2 {grid-row: 3 / 4; grid-column: 2 / 3;}
     #di3 {grid-row: 4 / 5; grid-column: 2 / 3;}
     #di4 {grid-row: 5 / 6; grid-column: 2 / 3;}    
+}
+@media print {
+    body {color: black;
+        font-family: Georgia, serif;
+        font-size: 10pt;
+    }
+@page {size: auto;
+    margin: 1in;
+}
+nav {display: none;}
+#mainAbout {margin-top: 20px;
+    grid-template-rows: 70px 300px 70px 100px 100px;
+    grid-template-columns: 200px 100px 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    }
+.h2name {display: none;
+    margin-top: 0;
+}
+#h1name {
+    color: black;
+    font-family: Mali, serif;
+    display:contents;
+    text-align: center;
+}
+#h1 {display: none;
+    margin-top:-10px;
+}
+blockquote {font-size: 10pt;}
 }
