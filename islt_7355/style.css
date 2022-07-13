@@ -98,13 +98,23 @@ footer {
     background-size: cover;
 }
 .imgfooter {margin-bottom: -10px;}
+.imgfooterbig {
+    position:absolute;
+    width: 0px;
+    -webkit-transition:width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index: 1;
+}
+.imgfooter:hover +.imgfooterbig {
+    width: 75px;
+}
 @media screen and (max-width:846px) {
     header h1 {font-size: large;}
     main h2 {font-size: medium;}
     main div {font-size: medium;} 
     footer {font-size: small;}
-    #img1 {width: 654px;}
-    #img1 {height: 300px;}
+    #img1 {width:100%;}/*654px300px*/
+    #img1 {height:auto;}
     p {font-size: medium;
     }
     #mainReflection {
@@ -142,14 +152,14 @@ footer {
     main h2 {font-size: medium;}
     main div {font-size: small;} 
     footer {font-size: x-small;}
-    #img1 {width: 500px;}
-    #img1 {height: 240px;}
+    #img1 {width:100%;}
+    #img1 {height:auto;}
     p {font-size: medium;}
 }
 @media screen and (max-width:515px) {
     .h2 {font-size: 18px;}
-    #img1 {width: 400px;}
-    #img1 {height: 200px;}
+    #img1 {width:100%;}
+    #img1 {height:auto;}
     #mainAbout {
         display: grid;
         grid-template-rows: 60px 240px 320px 20px 100px 100px;
@@ -189,12 +199,28 @@ footer {
     margin: 1in;
 }
 nav {display: none;}
-#mainAbout {margin-top: 20px;
-    grid-template-rows: 70px 300px 70px 100px 100px;
+#mainAbout {
+    display: grid;
+    grid-template-rows: 60px 300px 20px 70px 210px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-left: 10px;
+    width: 100%;
+}
+/*#mainAbout {margin-top: 20px;
+    grid-template-rows: 70px 600px 70px 60px 100px;
     grid-template-columns: 200px 100px 1fr;
     grid-gap: 10px;
-    width: 100%;
-    }
+    width: 100%;*/
+#d1 {grid-row: 1 / 2; grid-column: 1;}
+#d3 {grid-row: 2 / 3; grid-column: 1;}
+#d4 {grid-row: 3 / 4; grid-column: 1;}
+#d5 {grid-row: 4 / 5; grid-column: 1;}
+#d6 {grid-row: 5 / 6; grid-column: 1;}
+#d2 {display: none;}
+#d4 {display: contents;}
+
+
 .h2name {display: none;
     margin-top: 0;
 }
