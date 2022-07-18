@@ -27,6 +27,7 @@ nav ul li a {
     background-color: #a3cfed;
     border: 5px solid #a3cfed;
     font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 label {
     margin: 0 10px 0 0;
@@ -88,9 +89,7 @@ nav>ul>li:hover>ul {
         font-size: medium;
         text-align: center;
     }
-    /*nav ul ul {
-        z-index: 1;  
-    }*/
+    
     nav ul li ul li {
         margin-top:0;
         margin-bottom:0;
