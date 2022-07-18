@@ -59,7 +59,8 @@ blockquote {
 #reflection2 {padding-left: 36px;
     text-indent: -36px;}
 
-
+#img1 {width:100%;}
+#img1 {height:auto;}
 #mainAbout {
     display: grid;
     grid-template-rows: 70px 300px 70px 180px 800px;
