@@ -40,6 +40,7 @@
 p {
     font-size: larger;
 }
+.pindex {font-size: 26px;}
 blockquote {
     font-family: halimun, serif;
     font-size: 20px;
@@ -63,7 +64,7 @@ blockquote {
 #img1 {height:auto;}
 #mainAbout {
     display: grid;
-    grid-template-rows: 70px 300px 70px 180px 800px;
+    grid-template-rows: 70px 300px 70px 180px 500px;
     grid-template-columns: 200px 100px 1fr;
     grid-gap: 5px;
     width: 98%;
@@ -195,6 +196,7 @@ textarea {height: 300px; width: 500px;}
     #reflection1 {grid-row: 1 / 2; grid-column: 1;}
     #reflection2 {grid-row: 2 / 3; grid-column: 1;}
     .pr {font-size: small;}
+    .pindex {font-size: 19px;}
 
     #mainLearn {
         display:grid;
@@ -274,6 +276,7 @@ textarea {height: 300px; width: 500px;}
     blockquote {font-size: 15px;}
     .h2name {margin-top: 10px;}
     .pr {font-size: x-small;}
+    .pindex {font-size: 12px;}
     #d6 {margin-right: 5px;}
 
     .imgL {width: 100px;
