@@ -23,13 +23,13 @@ nav ul li a {
     padding-right: 20px;
     padding-left:30px;
     margin-right:10px;
-    font:bold;
     background-color: #a3cfed;
     border: 5px solid #a3cfed;
+    font-weight: bold;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
-label {
+.labelnav {
     margin: 0 10px 0 0;
     font-size: 26px;
     line-height: 35px;
@@ -60,17 +60,17 @@ nav ul>li ul {
 nav>ul>li:hover>ul {
     display: block;
 }
-@media screen and (max-width: 846px) {
-    label {
+@media screen and (max-width: 888px) {
+    .labelnav {
         display: block;
         cursor: pointer;
         }
-    #hamnav {height: 40px;
+    #hamnav {height: 45px;
         
     }
     #mobilenav {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 45px;
         display:none;       
     }
     #mobilenav li {

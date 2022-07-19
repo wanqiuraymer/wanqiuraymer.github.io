@@ -2,18 +2,17 @@
 <html lang="en-US">
 <head>
     <!--
-        This document displays the home page for the website. Updated on 6/30/2022.
+        This page is to show Contact. Updated on 7/18/22
     -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Little Mouse Chinese</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/png" href="image/icon2.png">
 </head>
 <body>
-
-    <header>
+     <header>
         <h1 id="h1">Little Mouse Chinese</h1>
     </header>
     <nav id="hamnav">
@@ -35,20 +34,30 @@
         </ul>
 
     </nav>
-    <h2 class="h2">Welcome to Little Mouse Chinese</h2>
-    <main>
-        <div class="divindex">
-            <p>Welcome to my website. Here you will learn about the Chinese language and culture in a fun way!</p>
-        </div>
-        <div class="divindex">
-            <p>This website is built to help you learn about families in Chinese. Families are very important in Chinese and American culture. They are both the same and different. Here, you will learn about the family members (including pets) and their basic information in the Chinese language. You will learn how to have a conversation in Chinese with others about families.  You will learn how to describe your own family and how to have a conversation in Chinese with others about families as well. The concept of “measure word” will also be introduced and practiced. You will learn the difference in using measure words both in English and Chinese. As for the cultural aspect, you will learn about the traditional and modern Chinese families.  And you will compare families in Chinese and American cultures. After your learning, you will be able to talk about families like a pro!</p>
+ 
+ <main>
+         <form action="mailto:wr9px@umsystem.edu?Subject=Educational%20Website%20Contact" method="post" enctype="text/plain">
+        <div>
+            <label for="firstname">First Name:</label><br>
+            <input type="text" id="firstname" placeholder="First name" required autofocus><br>
         </div>
         <div>
-            <img id="img1" src="kidslearning.jpg" alt="learning">
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" id="lastname" placeholder="Last name" required><br>
         </div>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" placeholder="Email" required><br>
+            <label for="message">Message</label><br>
+            <textarea id="message" placeholder="Please type in your message here." required></textarea><br>
+            <input type="submit">
+
+
+        </form>
+    
+        
     </main>
-    <br/>
-     <footer>
+
+    <footer>
         <p>Wanqiu Raymer &copy; 2022 Little Mouse Chinese<br/>
             <img class="imgfooter" src="image/email.png" alt="email" width="36" height="36"> 
             <img class="imgfooterbig" src="image/email.png" alt="email">
@@ -58,5 +67,4 @@
             1+888-888-8888
         </p>
     </footer>
-</body>
-</html>
+    
