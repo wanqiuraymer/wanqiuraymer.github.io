@@ -35,6 +35,27 @@
         </ul>
 
     </nav>
+    <SCRIPT LANGUAGE="JavaScript">
+        <!--
+        
+        //Bread crumb script - Kevin Lynn Brown
+        //Duplicate directory names bug fix by JavaScriptKit.com
+        //Visit JavaScript Kit (http://javascriptkit.com) for script
+        
+        var path = "";
+        var href = document.location.href;
+        var s = href.split("/");
+        for (var i=2;i<(s.length-1);i++) {
+        path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+        }
+        i=s.length-1;
+        path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+        var url = window.location.protocol + "//" + path;
+        document.writeln(url);
+        //-->
+        </script>
+        
+        
     <h2 class="h2">Welcome to Little Mouse Chinese</h2>
     <main>
         <div class="divindex">
@@ -47,6 +68,7 @@
             <img id="img1" src="kidslearning.jpg" alt="learning">
         </div>
     </main>
+    <p align="left">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
     <br/>
      <footer>
         <p>Wanqiu Raymer &copy; 2022 Little Mouse Chinese<br/>
@@ -57,6 +79,9 @@
             <img class="imgfooterbig" src="image/telephone.png" alt="phone">
             1+888-888-8888
         </p>
+        <a href='https://www.counters-free.net/'>Counters-Free</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=416b5b47379373789694f8b70d6ab95b4e1f9c10'></script>
+        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/956812/t/2"></script>
     </footer>
+   
 </body>
 </html>
